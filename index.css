@@ -1,0 +1,121 @@
+* {box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+body 
+{
+    background-image: url('bgimg.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;
+}
+
+/* brandNav */
+.brandNav
+{
+    display: flex;
+    flex-direction: row; justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: sticky; top: 1px;
+}
+.brandNav>.brand>img
+{
+    width: 24px; height: 24px; vertical-align: sub;
+    margin-right: 10px;
+}
+.brandNav>.brand>span
+{
+    font-size: 24px;
+    color: white;
+    letter-spacing: 3px;
+}
+.brandNav>nav>a
+{
+    margin-left: 10px;
+}
+.brandNav>nav>a>img
+{
+    height: 30px; width: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px 3px;
+    transition: border 1s;
+}
+.brandNav>nav>a>img:hover
+{
+    border: 2px solid white;
+}
+
+/* main */
+.main
+{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.main>.search
+{
+    margin: 0 0 30px 0;
+    height: 100px;
+    background-position: right top;
+    position: sticky; top: 20px;
+}
+.main>.search>form>input[type=search]
+{
+    font-weight: bold;
+    display: block;
+    width: 450px;
+    background-color: whitesmoke;
+    background-image: url('search2.png');
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 10px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: darkblue;
+    transition: background-color 1s, width 1s, color 1s;
+}
+.main>.search>form>input[type=search]:focus
+{
+    background-color: antiquewhite;
+    width: 500px;
+    color: black;
+}
+.shortcut>div
+{
+    margin-bottom: 20px;
+}
+.shortcut>div>a
+{
+    margin: 10px;
+}
+.shortcut>div>a>img
+{
+    height: 33px; width: 33px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: border 1s;
+}
+.shortcut>div>a>img:hover
+{
+    border: 2px solid black;
+}
+.customize
+{
+    width: fit-content;
+    position: absolute;
+    right: 10px; bottom: 10px;
+}
+.customize>a
+{
+    text-decoration: none; color: white;
+    border-bottom: 2px solid black;
+    transition: border-bottom 2s;
+}
+.customize>a:hover
+{
+    border-bottom: 2px solid white;
+}
+.customize>a>img
+{
+    height: 26px; width: 26px;
+}
